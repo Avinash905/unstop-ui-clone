@@ -1,0 +1,154 @@
+@import url(app.css);
+
+.practicehero {
+  padding: 151px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.practicehero::before {
+  content: "";
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6ca129ea6_hero_before.png)
+    no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -72px;
+  width: 358px;
+  height: 364px;
+  z-index: -1;
+}
+
+.practicehero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.practicehero-left-top {
+  max-width: 690px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.practicehero-left-top h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.practicehero-left-top p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.practicehero-cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.practicehero-cards a {
+  padding: 16px 16px 12px;
+  width: 163px;
+  height: 157px;
+  transition: all 0.3s linear;
+}
+
+.practicehero-cards a:hover {
+  transform: translateY(-15px);
+}
+
+.practicehero-cards a:nth-child(1) {
+  background-image: url(https://cdn.unstop.com/uploads/images/practice/crack-inteview.png?d=326x314);
+  background-size: cover;
+}
+
+.practicehero-cards a:nth-child(2) {
+  background-image: url(https://cdn.unstop.com/uploads/images/practice/mcq.png?d=326x314);
+  background-size: cover;
+}
+
+.practicehero-cards a:nth-child(3) {
+  background-image: url(https://cdn.unstop.com/uploads/images/practice/coding-sprint.png?d=326x314);
+  background-size: cover;
+}
+
+.practicehero-cards a:nth-child(4) {
+  background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de3f8950981_mock_interview.png?d=326x314);
+  background-size: cover;
+}
+
+.practicehero-cards a span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.practicehero-cards a:nth-child(1) {
+  color: #685200;
+}
+
+.practicehero-cards a:nth-child(2) {
+  color: #094010;
+}
+
+.practicehero-cards a:nth-child(3) {
+  color: #2a065e;
+}
+
+.practicehero-cards a:nth-child(4) {
+  color: #094010;
+}
+
+.practicehero-img {
+  position: absolute;
+  top: -240px;
+  right: -1582px;
+  z-index: 0;
+}
+
+.practicehero-img img {
+  max-width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .practicehero {
+    padding: 10px 0;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .practicehero-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .practicehero-left-top {
+    width: 100%;
+  }
+
+  .practicehero-img {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -35% -25% 10px;
+    width: 150%;
+  }
+
+  .practicehero-img img {
+    width: 100%;
+  }
+
+  .practicehero-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1100px) {
+  .practicehero-cards a {
+    width: 240px;
+    height: 250px;
+    border-radius: 20px;
+  }
+}

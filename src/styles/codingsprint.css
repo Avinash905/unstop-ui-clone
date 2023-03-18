@@ -1,0 +1,133 @@
+@import url(app.css);
+
+.codingsprint {
+  margin: 100px 0;
+  position: relative;
+}
+
+.codingsprint::before {
+  content: "";
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6d66232c1_sprint_before.png)
+    no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 99px;
+  left: 20px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.codingsprint::after {
+  content: "";
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6d18ce927_sprint_after.png)
+    no-repeat;
+  position: absolute;
+  width: 175px;
+  height: 400px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.codingsprint-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63ca3ec9ee6b8_coding_sprint_bg.png);
+  height: 456px;
+  background-position: center;
+  position: relative;
+}
+
+.codingsprint-left {
+  padding: 30px;
+  overflow: hidden;
+}
+
+.codingsprint-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.codingsprint-content h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #4e1e80;
+}
+
+.codingsprint-content h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #4e1e80;
+}
+
+.codingsprint-content .big {
+  font-weight: 400;
+  font-size: 20px;
+  color: #541794;
+  margin-bottom: 54px;
+  max-width: 455px;
+}
+
+.codingsprint-content h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #4e1e80;
+}
+
+.codingsprint-content .small {
+  font-size: 16px;
+  color: #4e1e80;
+  max-width: 390px;
+}
+
+.codingsprint-content a {
+  color: #fff;
+  background: #541794;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 50px;
+  margin-top: 54px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codingsprint-content a strong {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.codingsprint-coins {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+}
+
+.codingsprint-coins img {
+  max-width: 50%;
+}
+
+.codingsprint-image {
+  max-width: 55%;
+}
+
+.codingsprint-image img {
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .codingsprint-container {
+    height: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .codingsprint-coins {
+    left: 41%;
+  }
+}

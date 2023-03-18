@@ -1,0 +1,25 @@
+@import url(app.css);
+
+.download-app {
+  margin-bottom: 100px;
+}
+
+.download-app-container {
+  position: relative;
+}
+
+.download-app-container img {
+  width: 100%;
+}
+
+.download-app-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  left: 33%;
+  bottom: 12.5%;
+  gap: 1.5rem;
+  width: 35%;
+}

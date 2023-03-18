@@ -1,0 +1,19 @@
+@import url(app.css);
+
+.dayinterview {
+  position: relative;
+  margin: 100px 0;
+}
+
+.dayinterview::before {
+  content: "";
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6cd71395f_assessments_before.png)
+    no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 140px;
+  height: 440px;
+  z-index: -1;
+  background-size: cover;
+}

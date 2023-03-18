@@ -1,0 +1,105 @@
+@import url(app.css);
+
+.lpm {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.lpm-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lpm-images {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.lpm-image {
+  width: 50%;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.lpm-image img {
+  width: 100%;
+}
+
+.lpm-image:hover {
+  transform: translateY(-15px);
+}
+
+.lpm-image span {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  font-size: 28px;
+  width: 100%;
+  font-weight: 600;
+  z-index: 1;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.lpm-image:nth-child(2) {
+  color: #562f95 !important;
+}
+
+.lpm-image:nth-child(3) {
+  color: #685200 !important;
+}
+
+@media (min-width: 1201px) {
+  .lpm::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de43bdce283_multi_color_dot.png?d=76x188);
+    right: 40px;
+    top: -60px;
+    width: 41px;
+    height: 102px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  .lpm-image span {
+    font-size: 25px;
+    top: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .lpm-image span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .lpm-images {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lpm-image {
+    width: 100%;
+  }
+  .lpm-image span {
+    font-size: 30px;
+    top: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .lpm-image span {
+    /* font-size: 16px; */
+  }
+}
+
+@media (max-width: 450px) {
+  .lpm-image span {
+    /* font-size: 13px; */
+  }
+}

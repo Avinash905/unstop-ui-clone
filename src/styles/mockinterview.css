@@ -1,0 +1,40 @@
+@import url(app.css);
+
+.mockinterview {
+  position: relative;
+  margin: 100px 0;
+}
+
+.mockinterview::before {
+  content: "";
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6cd71395f_assessments_before.png)
+    no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 140px;
+  height: 440px;
+  z-index: -1;
+  background-size: cover;
+}
+
+.mockinterview::after {
+  content: "";
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb6d18ce927_sprint_after.png)
+    no-repeat;
+  position: absolute;
+  width: 175px;
+  height: 400px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.mockinterview-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mockinterview-container img {
+  max-width: 100%;
+}

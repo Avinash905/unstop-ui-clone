@@ -1,0 +1,142 @@
+@import url(app.css);
+
+.featuredopp {
+  position: relative;
+  margin-bottom: 86px;
+}
+
+.featuredopp-container {
+  background: linear-gradient(180deg, #f5fafe 0%, #ffffff 100%);
+  border: 1px solid #dde5ea;
+  border-radius: 30px;
+  padding: 32px 40px;
+}
+
+.featuredopp-content {
+  margin-bottom: 24px;
+}
+
+.featuredopp-content h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.featuredopp-content p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.featureopp-card {
+  cursor: pointer;
+  border: 1px solid #dde5ea;
+  border-radius: 16px;
+}
+
+.featureopp-card-img {
+  box-shadow: 0 -0.898705px 12.5819px #27497d0f;
+  overflow: hidden;
+  z-index: 0;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.featureopp-card-img img {
+  width: 100%;
+  max-height: inherit;
+}
+
+.featureopp-card-content {
+  padding: 12px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 127px;
+}
+
+.featureopp-card-content h4 {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.featureopp-card-bottom {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.featureopp-card-bottom span {
+  display: flex;
+  align-items: center;
+}
+
+.right-arrow {
+  font-size: 1.8rem;
+}
+
+.card-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 5px 10px;
+  height: 28px;
+  background: #e5f1fc;
+  border-radius: 22px;
+  color: var(--primary-color);
+}
+
+.card-badge img {
+  max-height: 227px;
+}
+
+.card-badge span {
+  color: var(--primary-color);
+}
+
+@media (min-width: 1201px) {
+  .home-feature::after {
+    content: "";
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de48d55dbba_yellow_dot.png);
+    width: 39px;
+    height: 95px;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0);
+  }
+
+  .feature-feature::before {
+    content: "";
+    background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63e34390c7df8_purple_dot.png?d=77x190)
+      no-repeat;
+    width: 39px;
+    height: 95px;
+    position: absolute;
+    background-size: contain;
+    left: 40px;
+    bottom: -40px;
+  }
+
+  .feature-feature::after {
+    left: auto;
+    right: 40px;
+    top: -40px;
+    bottom: auto;
+    content: "";
+    background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63e34390c7df8_purple_dot.png?d=77x190)
+      no-repeat;
+    width: 39px;
+    height: 95px;
+    position: absolute;
+    background-size: contain;
+  }
+}

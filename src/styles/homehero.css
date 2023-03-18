@@ -1,0 +1,157 @@
+@import url(app.css);
+
+.home-hero {
+  padding: 6.5rem 0;
+  position: relative;
+}
+
+.home-hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.home-hero-left {
+  position: relative;
+}
+
+.home-hero-left h1 {
+  font-weight: 400;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.home-hero-left h1:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: #f2c034;
+  width: 45%;
+  height: 2px;
+}
+
+.home-hero-left h1 strong {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.home-hero-left p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.home-hero-right-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  width: 550px;
+}
+
+.home-hero-image {
+  width: 30%;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.home-hero-image:hover {
+  transform: translateY(-15px);
+}
+
+.home-hero-image span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.home-hero-image:nth-child(2) {
+  color: #562f95 !important;
+}
+
+.home-hero-image:nth-child(3) {
+  color: #685200 !important;
+}
+
+.home-hero-image:nth-child(4) {
+  color: #08678f !important;
+}
+
+.home-hero-image:nth-child(5) {
+  color: #4c3b9e !important;
+}
+
+.home-hero-image:nth-child(6) {
+  color: #a74c02 !important;
+}
+
+.home-hero-image img {
+  width: 100%;
+}
+
+@media (min-width: 1201px) {
+  .home-hero:before {
+    position: absolute;
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63d4b178b31d5_home_hero_before.svg);
+    left: 40px;
+    top: 25%;
+    content: "";
+    width: 40px;
+    height: 95px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .home-hero:after {
+    position: absolute;
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de43bdce283_multi_color_dot.png?d=76x188);
+    right: 40px;
+    bottom: 15%;
+    width: 41px;
+    height: 102px;
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .home-hero-left:after {
+    content: "";
+    width: 38px;
+    height: 95px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/students/dotted-vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-hero-image {
+    width: 25%;
+  }
+}
+
+@media (max-width: 950px) {
+  .home-hero-container {
+    flex-direction: column;
+  }
+
+  .home-hero-image {
+    width: 30%;
+  }
+
+  .home-hero-left h1:after {
+    width: 100%;
+  }
+}

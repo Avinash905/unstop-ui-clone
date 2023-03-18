@@ -1,0 +1,272 @@
+@import url(app.css);
+
+.card-cont {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.common-cards-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.common-cards-container h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.common-cards-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.common-cards-container p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.common-cards-content a {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.common-cards-content a svg {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.common-cards-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.common-cards-image {
+  width: 50%;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.common-cards-image img {
+  width: 100%;
+}
+
+.borderimg {
+  padding: 60px 50px;
+  background: #ffffff;
+  border: 1px solid #dde5ea;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common-cards-image:hover {
+  transform: translateY(-15px);
+}
+
+.common-cards-image span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.jobs-cards span,
+.internships-cards span,
+.hiringchallenges span {
+  left: 15px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.common-cards-image span strong {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hiringchallenges-explore {
+  background: #f6f8fa;
+  position: relative;
+}
+
+.hiringchallenges-explore span {
+  color: #1c4980;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 140%;
+  z-index: 1;
+}
+
+.common-cards-image:nth-child(1) {
+  color: #61180c !important;
+}
+
+.common-cards-image:nth-child(2) {
+  color: #685200 !important;
+}
+
+.common-cards-image:nth-child(3) {
+  color: #1c4980 !important;
+}
+
+.common-cards-image:nth-child(4) {
+  color: #61180c !important;
+}
+
+.hired:nth-child(1) {
+  color: #1c4980 !important;
+}
+
+.hired:nth-child(2) {
+  color: #1c4980 !important;
+}
+
+.hired:nth-child(3) {
+  color: #61180c !important;
+}
+
+.hired:nth-child(4) {
+  color: #1c4980 !important;
+}
+
+.jobs:nth-child(1) {
+  color: #712f1d !important;
+}
+
+.jobs:nth-child(2) {
+  color: #1c4980 !important;
+}
+
+.jobs:nth-child(3) {
+  color: #5a3904 !important;
+}
+
+.jobs:nth-child(4) {
+  color: #5a3904 !important;
+}
+
+.internships:nth-child(1) {
+  color: #1c4980 !important;
+}
+
+.internships:nth-child(2) {
+  color: #5a3904 !important;
+}
+
+.internships:nth-child(3) {
+  color: #094010 !important;
+}
+
+.internships:nth-child(4) {
+  color: #61111d !important;
+}
+
+.hiringchallenges:nth-child(1) {
+  color: #1c4980 !important;
+}
+
+.hiringchallenges:nth-child(2) {
+  color: #61111d !important;
+}
+
+.hiringchallenges:nth-child(3) {
+  color: #5a3904 !important;
+}
+
+@media (min-width: 1201px) {
+  .common-cards::before {
+    content: "";
+    position: absolute;
+    background-image: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63de48d55dbba_yellow_dot.png);
+    width: 39px;
+    height: 95px;
+    left: 45px;
+    bottom: 190px;
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .mocktest-cards::after {
+    content: "";
+    background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63cb65c5c8aef_mock_after.png)
+      no-repeat;
+    position: absolute;
+    background-size: cover;
+    width: 80px;
+    height: 99px;
+    right: 30px;
+    bottom: 50%;
+    z-index: -1;
+  }
+
+  .acehiring-cards::after {
+    content: "";
+    background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63ce659489bf9_assessments_after.png)
+      no-repeat;
+    position: absolute;
+    right: 18%;
+    top: -28%;
+    width: 190px;
+    height: 120px;
+    z-index: -1;
+    background-size: cover;
+  }
+
+  .internships-cards::after {
+    content: "";
+    background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/63e34390c7df8_purple_dot.png?d=77x190)
+      no-repeat;
+    width: 39px;
+    height: 95px;
+    position: absolute;
+    background-size: contain;
+    left: auto;
+    right: 40px;
+    top: 40px;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .common-cards-images {
+    flex-wrap: wrap;
+  }
+
+  .common-cards-image {
+    width: 100%;
+  }
+
+  .acehiring {
+    width: 40%;
+  }
+
+  .common-cards-image span {
+    font-size: 22px;
+  }
+
+  .jobs-cards span,
+  .internships-cards span,
+  .hiringchallenges span {
+    font-size: 25px;
+  }
+
+  .common-cards-image span strong {
+    font-size: 25px;
+  }
+
+  .hiringchallenges-explore span {
+    font-size: 25px;
+  }
+}

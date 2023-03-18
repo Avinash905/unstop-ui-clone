@@ -1,0 +1,272 @@
+@import url(app.css);
+
+nav {
+  border-bottom: 1px solid rgba(28, 73, 128, 0.1);
+  height: 53px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-img {
+  display: flex;
+}
+
+.nav-img img {
+  height: 32px;
+}
+
+.nav-img span {
+  border-left: 1px solid rgba(39, 73, 125, 0.5);
+  font-size: 10px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.nav-img strong {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.nav-search {
+  position: relative;
+}
+
+.nav-search svg {
+  position: absolute;
+  top: 29%;
+  left: 4%;
+}
+
+.nav-search input {
+  border: 1px solid rgba(28, 73, 128, 0.1);
+  padding: 10px 10px 10px 34px;
+  border-radius: 8px;
+  color: var(--primary-color);
+  width: 300px;
+}
+
+::placeholder {
+  color: var(--primary-color);
+}
+
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+  color: var(--primary-color);
+}
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-tabs,
+.mobile-nav-tabs {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-tabs > div a,
+.mobile-nav-tabs > div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.nav-tabs > div a:before,
+.mobile-nav-tabs > div a:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--secondary-color);
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.nav-tabs > div a:hover,
+.mobile-nav-tabs > div a:hover {
+  color: var(--secondary-color);
+}
+
+.nav-tabs > div a:hover:before,
+.active:before {
+  transform: scale(1) !important;
+}
+
+.tab-icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background: url(https://d8it4huxumps7.cloudfront.net/uploads/images/menu/menu-spirit-icons.svg)
+    no-repeat;
+}
+
+.learn-tab .tab-icon {
+  background-position: 0px -34px;
+  transition: all 0.4s ease;
+}
+
+.learn-tab:hover .tab-icon {
+  background-position-x: -34px;
+}
+
+.practice-tab .tab-icon {
+  background-position: 0px -68px;
+  transition: all 0.4s ease;
+}
+
+.practice-tab:hover .tab-icon {
+  background-position-x: -34px;
+}
+
+.compete-tab .tab-icon {
+  background-position: 0px -102px;
+  transition: all 0.4s ease;
+}
+
+.compete-tab:hover .tab-icon {
+  background-position-x: -34px;
+}
+
+.mentorship-tab .tab-icon {
+  background-position: 0px -170px;
+  transition: all 0.4s ease;
+}
+
+.mentorship-tab:hover .tab-icon {
+  background-position-x: -34px;
+}
+
+.jobs-tab .tab-icon {
+  background-position: 0px -136px;
+  transition: all 0.4s ease;
+}
+
+.jobs-tab:hover .tab-icon {
+  background-position-x: -34px;
+}
+
+.tab-name {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.active span {
+  color: var(--secondary-color);
+}
+
+.active .tab-icon {
+  background-position-x: -34px;
+}
+
+.nav-btns {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.nav-btns button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.host-btn,
+.login-btn {
+  height: 34px;
+  border-radius: 50px;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0 15px;
+  border: none;
+}
+
+.host-btn {
+  background-color: var(--primary-color);
+}
+
+.login-btn {
+  background-color: var(--secondary-color);
+}
+
+.login-btn img {
+  filter: brightness(0) invert(1);
+  height: 14px;
+}
+
+.menu-btn {
+  width: 19px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .mobile-nav {
+    padding: 0.5rem 0 1rem 0;
+    display: block;
+    width: 100%;
+    position: sticky;
+    bottom: 0%;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(11, 74, 116, 0.176);
+  }
+  .mobile-nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar {
+    width: 99%;
+  }
+  .nav-search input {
+    width: 100%;
+  }
+  .nav-img span {
+    display: none;
+  }
+  .nav-search {
+    display: none;
+  }
+  .nav-tabs {
+    display: none;
+  }
+}

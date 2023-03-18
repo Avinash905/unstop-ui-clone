@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;700;800&display=swap");
+
+:root {
+  --primary-color: #1c4980;
+  --secondary-color: #0073e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  color: var(--primary-color);
+}
+
+input:focus {
+  outline: 1px solid #1c498084;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 7;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #787878;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d7d7d7;
+  border-radius: 20px;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 95% !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+}
